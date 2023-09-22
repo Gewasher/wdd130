@@ -1,0 +1,60 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@700&family=Fira+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #006D77;
+    --secondary-color: #EDF6F9;
+    --accent1-color: #83C5BE;
+    --accent2-color: #FFDDD2;
+
+    --heading-font: 'Fira Mono', monospace;
+    --paragraph-font:'Fira Sans', sans-serif;
+
+    --nav-backround-color: #FFDDD2;
+    --nav-link-color: black; 
+    --nav-hover-link: #006D77;
+    --nav-hover-background-color: #EDF6F9;
+
+}
+body{
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+
+}
+
+header{
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+p{
+    padding: 25px;
+}
+
+nav{
+    background-color: var(--nav-backround-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a{
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: underline;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color:var(--nav-link-color);
+}
+
+nav a:hover{
+    color: var(--nav-hover-link);
+    background-color: var(--nav-hover-background-color);
+}
