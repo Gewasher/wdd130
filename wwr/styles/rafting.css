@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@700&family=Fira+Sans:wght@400;700&display=swap');
+
+*{
+    margin:15px;
+}
+:root {
+    --primary-color: #006D77;
+    --secondary-color: #EDF6F9;
+    --accent1-color: #83C5BE;
+    --accent2-color: #FFDDD2;
+
+    --heading-font: 'Fira Mono', monospace;
+    --paragraph-font:'Fira Sans', sans-serif;
+
+    --nav-backround-color: #FFDDD2;
+    --nav-link-color: black; 
+    --nav-hover-link: #006D77;
+    --nav-hover-background-color: #EDF6F9;
+}
+
+
+body{
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1,h2{
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    
+}
+
+p{
+    color: black;
+}
+
+div.hero{
+    position: relative;
+}
+div.hero img{
+    width: 100%;
+}
+
+div.hero article{
+    color: var(--secondary-color);
+    background-color: #006d77ab;
+    position: absolute;
+    top: 70px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 15px;
+}
+
+div.hero h1{
+    top: 15px;
+    color: var(--secondary-color);
+    background-color: rgba(128, 128, 128, 0.514);
+    text-align: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+div.hero article img{
+    width: 150px;
+    float: right;
+}
+
+
+
+nav a{
+    display:inline;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+    margin: 0;
+}
+
+nav a:link, nav a:visited {
+    color:var(--nav-link-color);
+}
+
+nav.top a:hover{
+    color: var(--nav-hover-link);
+    background-color: var(--nav-hover-background-color);
+}
+
+nav.sociallinks a{
+    text-decoration: none;
+}
+
