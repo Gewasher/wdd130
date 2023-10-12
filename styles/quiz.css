@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@700&family=Fira+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #006D77;
+    --secondary-color: #EDF6F9;
+    --accent1-color: #83C5BE;
+    --accent2-color: #FFDDD2;
+
+    --heading-font: 'Fira Mono', monospace;
+    --paragraph-font:'Fira Sans', sans-serif;
+
+    --nav-backround-color: #FFDDD2;
+    --nav-link-color: black; 
+    --nav-hover-link: #006D77;
+    --nav-hover-background-color: #EDF6F9;
+}
+body{
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+}
+header{
+    width: 650px;
+    margin: 0 auto;
+}
+h1{
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-align: center;
+}
+form{
+    width: 650px;
+    margin:0 auto;
+    padding: 1rem;
+    border: 1px solid var(--accent1-color);
+    background-color: var(--secondary-color);
+    display: grid;
+}
+fieldset{
+    display: grid;
+    grid-gap: .5rem;
+    border: 1px solid var(--accent1-color);
+    padding: 1rem;
+}
+
+input,select,textarea{
+    font-size: larger;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+input[type="checkbox"]  {
+    width: 25px;
+    height: 25px;
+    vertical-align: bottom;
+}
+button{
+    margin: 1rem;
+    
+    padding: 1rem;
+    font-size: larger;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+footer{
+    text-align: center;
+    margin: 1rem auto;
+    width: 650px;
+    border-top: 1px solid var(--accent1-color);
+}
